@@ -1,11 +1,14 @@
 
 
 ### Request 
-`/strategy`
+`/templatemethod`
 
 ### Response
-	原價：1850
-	黃金會員應付金額：925
-	白銀會員應付金額：1480
-	一般會員應付金額：1665
+	姓名：Nick
+	職業：Software Engineer
+	年資：3 years
+	-----------------------------------------
+	姓名：尼克
+	職業：軟體工程師
+	年資：3 years
 	
