@@ -7,6 +7,10 @@ class BrightestLight implements IState {
 		$this->state = $state;
 	}
 
+	public function getStatus() {
+		return 'BrightestLight';
+	}
+
 	public function turnNext() {
 		echo '下一步：最亮<br />';
 		$this->state->setState($this->state->getOffState());

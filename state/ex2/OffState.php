@@ -7,6 +7,10 @@ class OffState implements IState {
 		$this->state = $state;
 	}
 
+	public function getStatus() {
+		return 'OffState';
+	}
+
 	public function turnNext() {
 		echo '下一步：關燈<br />';
 		$this->state->setState($this->state->getOnState());

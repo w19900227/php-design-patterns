@@ -9,6 +9,11 @@ class OnState implements IState
 		$this->context = $contextNow;
 	}
 
+	public function getStatus() 
+	{
+		return 'OnState';
+	}
+
 	public function turnLightOn()
 	{
 		echo 'Light is already on -> take no action<br />';

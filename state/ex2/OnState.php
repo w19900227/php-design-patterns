@@ -9,6 +9,10 @@ class OnState implements IState {
 		$this->state = $state;
 	}
 
+	public function getStatus() {
+		return 'OnState';
+	}
+
 	public function turnNext() {
 		echo '下一步：開燈<br />';
 		$this->state->setState($this->state->getBrighterLight());

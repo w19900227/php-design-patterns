@@ -9,6 +9,11 @@ class OffState implements IState
 		$this->context = $contextNow;
 	}
 
+	public function getStatus() 
+	{
+		return 'OffState';
+	}
+
 	public function turnLightOn()
 	{
 		echo 'Lights on!<br />';

@@ -14,12 +14,18 @@ class Context {
 
 	public function turnOnLight()
 	{
+		echo 'Now state: ' . $this->getStatus() . '<br />';
 		$this->currentState->turnLightOn();
+		echo 'After state : ' . $this->getStatus() . '<br />';
+		echo '<hr />';
 	}
 
 	public function turnOffLight()
 	{
+		echo 'Now state : ' . $this->getStatus() . '<br />';
 		$this->currentState->turnLightOff();
+		echo 'After state : ' . $this->getStatus() . '<br />';
+		echo '<hr />';
 	}
 
 	public function setState(IState $state)
@@ -35,6 +41,11 @@ class Context {
 	public function getOffState()
 	{
 		return $this->offState;
+	}
+
+	public function getStatus()
+	{
+		return $this->currentState->getStatus();
 	}
 
 }

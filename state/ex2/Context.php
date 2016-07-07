@@ -18,11 +18,17 @@ class Context {
 	}
 
 	public function next() {
+		echo 'Now State : ' . $this->getStatus() . '<br />';
 		$this->currentState->turnNext();
+		echo 'After State : ' . $this->getStatus() . '<br />';
+		echo '<hr />';
 	}
 
 	public function last() {
+		echo 'Now State : ' . $this->getStatus() . '<br />';
 		$this->currentState->turnLast();
+		echo 'After State : ' . $this->getStatus() . '<br />';
+		echo '<hr />';
 	}
 
 	public function setState(IState $state) {
@@ -43,6 +49,10 @@ class Context {
 
 	public function getBrightestLight() {
 		return $this->brightestLight;
+	}
+
+	public function getStatus() {
+		return $this->currentState->getStatus();
 	}
 }
 
