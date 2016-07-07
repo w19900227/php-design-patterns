@@ -8,9 +8,11 @@ include_once "Proxy.php";
  */
 
 // 本人
-$roy = new RealSubject("Nick");
-// 委任蘇律師
-$royProxy = new Proxy($roy, "Lian律師");
+$nick = new RealSubject("Nick");
+
+// 委任Lian律師
+$royProxy = new Proxy($nick, "Lian律師");
+
 // 在法庭答辯
 $royProxy->speak("Hello everyone");
 
