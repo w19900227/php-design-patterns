@@ -14,7 +14,7 @@ class SilverMember implements Strategy {
     	// 原價總額
     	$total = array_sum($priceList);
     	// 能折扣多少
-    	$rebate = $total / 1000 * 200;
+    	$rebate = 200;
     	return $total - $rebate;
     }
 }
