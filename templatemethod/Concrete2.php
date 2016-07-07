@@ -8,15 +8,15 @@ include_once "Template.php";
  * @author Nick Lian
  */
 class Concrete2 extends Template {
-	public function getName() {
+	protected function getName() {
 		return "尼克";
 	}
 
-	public function getJob() {
+	protected function getJob() {
 		return "軟體工程師";
 	}
 
-	public function getSeniority() {
+	protected function getSeniority() {
 		return "3 years";
 	}
 }

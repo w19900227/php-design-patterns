@@ -10,8 +10,8 @@ include_once "Concrete2.php";
 $template1 = new Concrete1();
 $template2 = new Concrete2();
 
-$template1->printResume();
+$template1->display();
 echo "<hr />";
-$template2->printResume();
+$template2->display();
 
 ?>

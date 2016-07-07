@@ -14,7 +14,7 @@ abstract class Template {
      * 於此進行一整串的演算法,
      * 將演算法中相異的地方抽出來, 讓子類別實作
      */
-    public function printResume() {
+    public function display() {
         echo "姓名：" . $this->getName();
         echo "<br />";
         echo "職業：" . $this->getJob();
@@ -25,9 +25,9 @@ abstract class Template {
 	/**
      * 以下為演算法中相異的地方, 供子類別實作
      */
-    public function getName() {}
-    public function getJob() {}
-    public function getSeniority() {}
+    protected abstract function getName();
+    protected abstract function getJob();
+    protected abstract function getSeniority();
 }
 
 ?>
