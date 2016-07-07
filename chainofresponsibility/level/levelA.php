@@ -8,7 +8,7 @@ class levelA implements Handler {
 		if ( $i == 1 ) {
 			return "等級" . $i . "只能給A級英雄處理";
 		}
-		return "沒小於" . $i . "的警報";
+		return $this->handler->request($i);
 	}
 
 	public function setNextHandler(Handler $handler) {

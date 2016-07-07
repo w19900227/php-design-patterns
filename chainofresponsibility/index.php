@@ -7,16 +7,13 @@ $level_a = new levelA();
 $level_b = new levelB();
 $level_c = new levelC();
 
-$level_c->setNextHandler($level_b);
-$level_b->setNextHandler($level_a);
-
+$level_a->setNextHandler($level_b);
+$level_b->setNextHandler($level_c);
 
 for ( $i=1; $i<6; $i++ ) {
-	$result = $level_c->request($i);
+	$result = $level_a->request($i);
 	echo $result;
 	echo "<br />";
 }
-
-
 
 ?>
