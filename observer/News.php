@@ -20,7 +20,6 @@ class News implements Observable {
 	public function removeObserver(Observer $observer) {
 		$position = 0;
 		foreach ($this->observers as $viewer) {
-			// var_dump($viewer==$observer);
 			if ($viewer == $observer) {
 				array_splice($this->observers, $position, 1);
 			}
