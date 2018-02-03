@@ -22,7 +22,7 @@
 	Sex : girl
 
 
-### Not Using `clone` of Response(you can see my messages, if it don't using `clone` in index.php at 13 line.)
+### Don't use `clone` of Response(you can see my messages, if it don't use `clone` in index.php at 13 line.)
 	Name : nick
 	Age : 10
 	Sex : boy

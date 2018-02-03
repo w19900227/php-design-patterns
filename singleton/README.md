@@ -1,0 +1,7 @@
+
+
+### Request 
+`/singleton`
+
+### Response
+	
