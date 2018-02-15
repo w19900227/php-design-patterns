@@ -1,6 +1,6 @@
 <?php
-include_once "Builder.php";
-include_once "Computer.php";
+include_once "director/Director.php";
+include_once "director/Computer.php";
 
 class MacBookProBuilder implements Builder {
 	private $computer;

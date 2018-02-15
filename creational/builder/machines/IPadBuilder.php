@@ -1,6 +1,6 @@
 <?php
-include_once "Builder.php";
-include_once "Computer.php";
+include_once "director/Director.php";
+include_once "director/Computer.php";
 
 class IPadBuilder implements Builder {
 	private $computer;
@@ -9,27 +9,27 @@ class IPadBuilder implements Builder {
 		$this->computer = new Computer();
 	}
 	public function setMb() {
-		$this->computer->setMb("iPod的主機版");
+		$this->computer->setMb("iPad的主機版");
 	}
 
 	public function setPower() {
-		$this->computer->setPower("iPod的電源");
+		$this->computer->setPower("iPad的電源");
 	}
 
 	public function setCpu() {
-		$this->computer->setCpu("iPod的處理器");
+		$this->computer->setCpu("iPad的處理器");
 	}
 
 	public function setRam() {
-		$this->computer->setRam("iPod的記憶體");
+		$this->computer->setRam("iPad的記憶體");
 	}
 
 	public function setHdd() {
-		$this->computer->setHdd("iPod的硬碟");
+		$this->computer->setHdd("iPad的硬碟");
 	}
 
 	public function setVga() {
-		$this->computer->setVga("iPod的顯示卡");
+		$this->computer->setVga("iPad的顯示卡");
 	}
 
 	public function buildComputer() {

@@ -1,16 +1,16 @@
 <?php
-include_once "Director.php";
+include_once "director/Director.php";
 include_once "machines/MacBookProBuilder.php";
 include_once "machines/IPadBuilder.php";
 
-$director1 = new Director(new MacBookProBuilder());
-$macBookPro = $director1->createComputer();
+$mac_director = new Director(new MacBookProBuilder());
+$macBookPro = $mac_director->createComputer();
 echo $macBookPro;
 
 echo "<hr />";
 
-$director1 = new Director(new IPadBuilder());
-$macBookPro = $director1->createComputer();
+$ipad_director = new Director(new IPadBuilder());
+$macBookPro = $ipad_director->createComputer();
 echo $macBookPro;
 
 ?>
