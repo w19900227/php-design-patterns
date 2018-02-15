@@ -1,7 +1,8 @@
 
 
 ### Request 
-`/singleton`
+`/creational/singleton/`
 
 ### Response
+	Singleton Pattern
 	

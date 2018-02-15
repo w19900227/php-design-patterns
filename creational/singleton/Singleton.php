@@ -13,9 +13,9 @@ class Singleton {
     /**
      * 使用靜態變數記錄Singleton, 並建立實例
      */
-    private $singleton;
+    private $singleton = null;
 
-    public function Singleton() {
+    public function init() {
     	$this->singleton = new Singleton();
     }
 
@@ -23,7 +23,14 @@ class Singleton {
      * 讓外部只能透過這個method取得Singleton實例
      */
     public function getInstance() {
+        if ($this->singleton==null) {
+            $this->singleton = new Singleton();
+        }
     	return $this->singleton;
+    }
+
+    public function display() {
+        return 'Singleton Pattern';
     }
 
 }
