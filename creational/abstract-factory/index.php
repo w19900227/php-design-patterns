@@ -2,23 +2,23 @@
 include_once "abstract_cars/BmwFactory.php";
 include_once "abstract_cars/AudiFactory.php";
 
-$factory =  new BmwFactory();
+$BMW =  new BmwFactory();
 
-$sedan = $factory->buildSedan();
-$sedan->work();
+$BMW_sedan = $BMW->buildSedan();
+$BMW_sedan->work();
 
-$sedan = $factory->buildSportsCar();
-$sedan->competition();
+$BMW_sports = $BMW->buildSportsCar();
+$BMW_sports->competition();
 
 
 
-$factory2 =  new AudiFactory();
+$Audi =  new AudiFactory();
 
-$sedan2 = $factory2->buildSedan();
-$sedan2->work();
+$Audi_sedan = $Audi->buildSedan();
+$Audi_sedan->work();
 
-$sedan2 = $factory2->buildSportsCar();
-$sedan2->competition();
+$Audi_sports = $Audi->buildSportsCar();
+$Audi_sports->competition();
 
 
 ?>
