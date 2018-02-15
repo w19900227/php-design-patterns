@@ -1,6 +1,6 @@
 <?php
-include_once "IPrototype.php";
-class Boy extends IPrototype {
+include_once "GenderPrototype.php";
+class Boy extends GenderPrototype {
 	
 	public function __construct() {
 		$this->name = 'nick';

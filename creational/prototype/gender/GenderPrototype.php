@@ -1,6 +1,6 @@
 <?php
 
-abstract class IPrototype {
+abstract class GenderPrototype {
 	public $name;
 	public $age;
 	public $sex;
