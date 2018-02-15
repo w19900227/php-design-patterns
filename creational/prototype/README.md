@@ -1,7 +1,7 @@
 
 
 ### Request 
-`/creational/prototype/ex2/`
+`/creational/prototype/`
 
 
 ### Response
