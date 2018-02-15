@@ -1,9 +1,9 @@
 <?php
-include_once "sportscar/BmwSportsCar.php";
+include_once "sports/BmwSportsCar.php";
 include_once "sedan/BmwSedan.php";
-include_once "AbstractFactory.php";
+include_once "AbstractCars.php";
 
-class BmwFactory implements AbstractFactory {
+class BmwFactory implements AbstractCars {
 	public function buildSedan() {
 		return new BmwSedan();
 	}

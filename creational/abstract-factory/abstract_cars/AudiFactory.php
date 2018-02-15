@@ -1,9 +1,9 @@
 <?php
-include_once "sportscar/AudiSportsCar.php";
+include_once "sports/AudiSportsCar.php";
 include_once "sedan/AudiSedan.php";
-include_once "AbstractFactory.php";
+include_once "AbstractCars.php";
 
-class AudiFactory implements AbstractFactory {
+class AudiFactory implements AbstractCars {
 	public function buildSedan() {
 		return new AudiSedan();
 	}

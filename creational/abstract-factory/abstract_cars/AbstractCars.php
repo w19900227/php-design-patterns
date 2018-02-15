@@ -1,5 +1,5 @@
 <?php
-interface AbstractFactory {
+interface AbstractCars {
 	public function buildSedan();
 	public function buildSportsCar();
 }

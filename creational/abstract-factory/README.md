@@ -1,6 +1,6 @@
 
 ### Request 
-`/abstractfactory`
+`/creational/abstract-factory/`
 
 ### Response
     開BMW轎車上班
