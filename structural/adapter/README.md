@@ -1,6 +1,6 @@
 
 ### Request 
-`/adapter/ex1`
+`/structural/adapter/`
 
 ### Response
     於第三方API insert一筆資料

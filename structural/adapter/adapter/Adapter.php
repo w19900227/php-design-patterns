@@ -1,6 +1,7 @@
 <?php
 include_once "Target.php";
 include_once "Adaptee.php";
+
 class Adapter implements Target {
 	private $adaptee;
 
