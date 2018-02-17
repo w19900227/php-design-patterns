@@ -1,7 +1,7 @@
 <?php
 
-include_once "ConcreteComponent.php";
-include_once "ConcreteDecorator.php";
+include_once "component/ConcreteComponent.php";
+include_once "decorator/ConcreteDecorator.php";
 
 // 一則情報
 $message = new ConcreteComponent();

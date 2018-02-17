@@ -8,7 +8,9 @@ class ConcreteDecorator implements Decorator {
 	}
 	public function request() {
 		echo "在情報前面加密///";
+		echo "<br />";
 		$this->component->request();
+		echo "<br />";
 		echo "///在情報後面加密";
 	}
 }
