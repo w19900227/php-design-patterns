@@ -4,7 +4,7 @@ include_once "Abstraction.php";
 class Mac implements Abstraction {
 	private $implementor;
 
-	public function Mac(Implementor $implementor) {
+	public function __construct(Implementor $implementor) {
 		$this->implementor = $implementor;
 	}
 

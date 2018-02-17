@@ -4,7 +4,7 @@ include_once "Abstraction.php";
 class Asus implements Abstraction {
 	private $implementor;
 
-	public function Asus(Implementor $implementor) {
+	public function __construct(Implementor $implementor) {
 		$this->implementor = $implementor;
 	}
 

@@ -1,6 +1,6 @@
 
 ### Request 
-`/bridge`
+`/structural/bridge/`
 
 ### Response
 	Mac : OS X作業系統載入，各項軟體載入記憶體準備…
@@ -12,3 +12,7 @@
 	Msi : Windows作業系統載入，各項軟體載入記憶體準備…
 	Msi : 使用者點擊了滑鼠，開啟iTunes…
 	Msi : 使用者點了關機，關閉各項軟體並關閉Windows作業系統…
+
+跟facade pattern很相似，但是差異在於。
+1. bridge用於將已有物件的元素，用另一個物件做「橋接封裝」做額外的處理。
+2. facade主要在於，將流程、邏輯等包裝在一個物件去控制，對外而言會簡化更多流程。

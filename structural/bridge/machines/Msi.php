@@ -4,7 +4,7 @@ include_once "Abstraction.php";
 class Msi implements Abstraction {
 	private $implementor;
 
-	public function Msi(Implementor $implementor) {
+	public function __construct(Implementor $implementor) {
 		$this->implementor = $implementor;
 	}
 
