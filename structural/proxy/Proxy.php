@@ -1,6 +1,8 @@
 <?php
 
 include_once "Subject.php";
+include_once "RealSubject.php";
+
 /**
  * 真實的身份
  * 
@@ -8,9 +10,9 @@ include_once "Subject.php";
  */
 class Proxy implements Subject {   
     /**
-     * 被代理人
+     * 本人
      */
-    private $subject;
+    private $subject = null;
  
     /**
      * 姓名
@@ -23,8 +25,10 @@ class Proxy implements Subject {
      * @param realSubject
      * @param name
      */
-    public function __construct(Subject $realSubject, $name) {
-    	$this->subject = $realSubject;
+    public function __construct($name) {
+        if ($this->subject == null) {
+            $this->subject = new RealSubject("Nick");
+        }
     	$this->name = $name;
     }
 
