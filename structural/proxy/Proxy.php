@@ -23,7 +23,7 @@ class Proxy implements Subject {
      * @param realSubject
      * @param name
      */
-    public function Proxy(Subject $realSubject, $name) {
+    public function __construct(Subject $realSubject, $name) {
     	$this->subject = $realSubject;
     	$this->name = $name;
     }

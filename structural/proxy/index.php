@@ -11,9 +11,9 @@ include_once "Proxy.php";
 $nick = new RealSubject("Nick");
 
 // 委任Lian律師
-$royProxy = new Proxy($nick, "Lian律師");
+$proxy = new Proxy($nick, "Lian律師");
 
 // 在法庭答辯
-$royProxy->speak("Hello everyone");
+$proxy->speak("Hello everyone");
 
 ?>

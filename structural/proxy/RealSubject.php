@@ -18,7 +18,7 @@ class RealSubject implements Subject {
      * 
      * @param name
      */
-    public function RealSubject($name) {
+    public function __construct($name) {
     	$this->name = $name;
     }
 
