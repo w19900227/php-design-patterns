@@ -1,7 +1,7 @@
-### 尚未完成
-
 
 ### Request 
-`/command`
+`/behavioral/command/`
 
 ### Response
+	turn on the light
+	turn off the light
