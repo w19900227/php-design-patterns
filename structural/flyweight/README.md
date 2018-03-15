@@ -1,7 +1,7 @@
 
 
 ### Request 
-`/flyweight`
+`/structural/flyweight/`
 
 ### Response
 	連線 : 1

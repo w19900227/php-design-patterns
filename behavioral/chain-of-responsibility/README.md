@@ -1,6 +1,6 @@
 
 ### Request 
-`/chainofresponsibility`
+`/behavioral/chain-of-responsibility/`
 
 ### Response
 	等級1只能給A級英雄處理

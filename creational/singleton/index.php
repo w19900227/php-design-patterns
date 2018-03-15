@@ -3,7 +3,7 @@
 include_once "Singleton.php";
 
 $singleton = new Singleton();
-$singleton->init();
+// $singleton->init();
 $instance = $singleton->getInstance();
 echo $instance->display();
 

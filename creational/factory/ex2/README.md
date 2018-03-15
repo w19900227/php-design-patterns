@@ -1,7 +1,7 @@
 
 
 ### Request 
-`/factory/ex2`
+`/creational/factory/ex2/`
 
 ### Response
 	連線至My Sql Server資料庫
